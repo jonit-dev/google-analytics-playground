@@ -1,7 +1,9 @@
 $(function () {
     console.log('Google analytics tracker loaded');
 
-    ga('send', 'event', 'user', 'landing_visit');
+    gtag('event', 'landing_visit', {
+        'event_category': 'users'
+    });
 
     //User clicks on a product
     $('.card').on('click', function () {
@@ -17,7 +19,11 @@ $(function () {
 
         console.log('Sending event to GA');
 
-        ga('send', 'event', 'product', 'product_click', product.name, product.price);
+        gtag('event', 'product_click', {
+            'event_category': 'products',
+            'event_label': product.name,
+            'value': product.price
+        });
 
 
     });
