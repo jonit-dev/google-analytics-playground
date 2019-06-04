@@ -44,6 +44,16 @@
 
   </style>
 
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+
 
     <!-- GA TRACKING CODE -->
 
@@ -55,7 +65,18 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-141379276-1');
+
+
+        window['GoogleAnalyticsObject'] = 'ga';
+        window['ga'] = window['ga'] || function() {
+            (window['ga'].q = window['ga'].q || []).push(arguments)
+        };
+
     </script>
+
+    <script src="./js/google-analytics/tracker.js"></script>
+
+
 
 
 </head>
@@ -787,21 +808,20 @@
   </footer>
   <!--/.Footer-->
 
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+
+
+
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
+      // Animations initialization
+      new WOW().init();
 
   </script>
+
 </body>
 
 </html>
