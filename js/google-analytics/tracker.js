@@ -18,6 +18,8 @@ $(function () {
         console.log(`User clicked on a ${product.name}`);
 
         console.log('Sending event to GA');
+        
+        console.log('gtag event');
 
         gtag('event', 'product_click', {
             'event_category': 'products',
