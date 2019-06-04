@@ -1,10 +1,6 @@
 $(function () {
     console.log('Google analytics tracker loaded');
 
-    gtag('event', 'landing_visit', {
-        'event_category': 'users'
-    });
-
     //User clicks on a product
     $('.card').on('click', function () {
 
@@ -17,15 +13,13 @@ $(function () {
 
         console.log(`User clicked on a ${product.name}`);
 
-        console.log('Sending event to GA');
-        
-        console.log('gtag event');
+        console.log('Sending event to GTM');
 
-        gtag('event', 'product_click', {
-            'event_category': 'products',
-            'event_label': product.name,
-            'value': product.price
-        });
+        dataLayer.push({
+            'event': 'products',
+            'product_name': product.name,
+            'product_price': product.price
+        })
 
 
     });
