@@ -19,7 +19,7 @@ $(function () {
         console.log('Sending event to GTM');
 
         dataLayer.push({
-            'event': 'product_click',
+            'event': 'product_click_new',
             'product_name': product.name,
             'product_price': product.price
         });
