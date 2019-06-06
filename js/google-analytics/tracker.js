@@ -1,4 +1,11 @@
 $(function () {
+    
+    console.log('jQuery loaded');
+    
+    $('.card').on('click', function() {
+        console.log('Hello there!');
+    })
+    
     // console.log('Google analytics tracker loaded');
     //
     // //User clicks on a product
