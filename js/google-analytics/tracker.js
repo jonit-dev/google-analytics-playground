@@ -1,7 +1,11 @@
 $(function () {
 
+    console.log('jQuery loaded');
 
-    $('.card').on('mousedown', function () {
+
+    $('.card').on('click', function (e) {
+
+        e.preventDefault();
 
         console.log('Google analytics tracker loaded');
 
@@ -19,7 +23,6 @@ $(function () {
             'product_name': product.name,
             'product_price': product.price
         });
-
 
 
     });
